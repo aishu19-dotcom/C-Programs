@@ -1,6 +1,6 @@
 /*
 Author: Aishwarya
-Program 2: Write a C Program write a C program to Display Size of Different Datatype.
+Program 2: Write a C Program to Display Size of Different Datatype.
 */
 
 #include <stdio.h>
