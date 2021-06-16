@@ -2,8 +2,7 @@
 Author:Aishwarya
 Question 10: Write a C program To compute Quotient and Remainder
  */
-
- #include <stdio.h>
+#include <stdio.h>
  int main() {
      int dividend, divisor, quotient, remainder;
      printf("Enter dividend: ");
