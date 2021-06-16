@@ -2,6 +2,7 @@
 Question: Write a c program to swapping two bits of a byte using bitwise operators.
 */
 
+
 #include<stdio.h>
 int swapBits(unsigned int n, unsigned int p1, unsigned int p2)
 {
