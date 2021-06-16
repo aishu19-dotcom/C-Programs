@@ -7,7 +7,7 @@ and output the result in character and integer data type.
 int main() {
     int number;
 
-    printf("Enter an integer: ");  
+    printf("Enter an integer: ");
     scanf("%d", &number);
     printf("You entered: %d", number);
 
