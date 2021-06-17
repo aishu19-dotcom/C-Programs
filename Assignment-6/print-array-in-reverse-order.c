@@ -1,24 +1,46 @@
 /*
-Question:  Write a C program to print an array in reverse order
+Question:  Write a C program to delete duplicate elements from array.
 */
 
-#include <stdio.h>
+#include<stdio.h>
+int remove_duplicate_elements(int arr[], int n)
+{
+
+if (n==0 || n==1)
+return n;
+
+int temp[n];
+
+int j = 0;
+int i;
+for (i=0; i<n-1; i++)
+if (arr[i] != arr[i+1])
+temp[j++] = arr[i];
+temp[j++] = arr[n-1];
+
+for (i=0; i<j; i++)
+arr[i] = temp[i];
+
+return j;
+}
+
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5};
-    int length = sizeof(arr)/sizeof(arr[0]);
+int n;
+scanf(“%d”,&n);
+int arr[n];
+int i;
+for(i = 0; i < n; i++)
+{
+scanf(“%d”,&arr[i]);
+}
 
-    printf("Original array: \n");
-    for (int i = 0; i < length; i++) {
-        printf("%d ", arr[i]);
-    }
+n = remove_duplicate_elements(arr, n);
 
-    printf("\n");
 
-    printf("Array in reverse order: \n");        
-    for (int i = length-1; i >= 0; i--) {
-        printf("%d ", arr[i]);
-    }
-    return 0;
+for (i=0; i<n; i++)
+printf(“%d “,arr[i]);
+
+return 0;
 }
