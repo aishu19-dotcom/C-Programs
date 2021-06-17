@@ -3,7 +3,6 @@ Question:  Write a c program to copy elements from one array to another array.
 */
 
 #include <stdio.h>
-
 int main()
 {
     int arr1[100], arr2[100];
