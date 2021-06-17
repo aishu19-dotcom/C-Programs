@@ -3,7 +3,7 @@ Question :Write a C program to accept two integers and check whether they are eq
 */
 
 #include <stdio.h>
-void main()
+int main()
 {
     int m, n;
 
@@ -13,4 +13,5 @@ void main()
         printf("M and N are equal\n");
     else
         printf("M and N are not equal\n");
+    return 0;
 }
