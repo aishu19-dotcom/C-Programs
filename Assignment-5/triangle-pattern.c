@@ -10,6 +10,7 @@ Question : Write a C program for the following pattern.
 
 */
 
+
 #include <stdio.h>
 int main() {
     int n,space1,space2,i,j;
