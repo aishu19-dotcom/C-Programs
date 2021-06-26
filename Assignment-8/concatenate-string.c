@@ -1,7 +1,6 @@
 /*
 Question: Write a C Program to concatenate 2 strings
 */
-
 #include <stdio.h>
 #include<string.h>
 int main()
