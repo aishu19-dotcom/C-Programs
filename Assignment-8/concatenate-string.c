@@ -7,7 +7,7 @@ Question: Write a C Program to concatenate 2 strings
 int main()
 {
   char s1[20];
-  char s2[20]; 
+  char s2[20];
 printf("Enter the first string : ");
 scanf("%s", s1);
 printf("\nEnter the second string :");
