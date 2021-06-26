@@ -2,27 +2,28 @@
 Question: Write a C Program to Sort set of strings in alphabetical order
 */
 
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
+int main(){
+   int i,j,count;
+   char str[25][25],temp[25];
+   puts("How many strings u are going to enter?: ");
+   scanf("%d",&count);
 
-int main ()
-{
-	char string[100];
-  printf("\n\t Enter the string : ");
-	scanf(“%s”,string);
-	char temp;
-	int i, j;
-	int n = strlen(string);
-	for (i = 0; i < n-1; i++) {
-		for (j = i+1; j < n; j++) {
-			if (string[i] > string[j]) {
-					temp = string[i];
-					string[i] = string[j];
-					string[j] = temp;
-			}
-		}
-	}
+   puts("Enter Strings one by one: ");
+   for(i=0;i<=count;i++)
+      gets(str[i]);
+   for(i=0;i<=count;i++)
+      for(j=i+1;j<=count;j++){
+         if(strcmp(str[i],str[j])>0){
+            strcpy(temp,str[i]);
+            strcpy(str[i],str[j]);
+            strcpy(str[j],temp);
+         }
+      }
+   printf("Order of Sorted Strings:");
+   for(i=0;i<=count;i++)
+      puts(str[i]);
 
-	printf(“The sorted string is : %s”, string);
-	return 0;
+   return 0;
 }
