@@ -1,3 +1,6 @@
+/*
+Question : Write a C program to add two numbers using function
+*/
 #include <stdio.h>
 #include <stdlib.h>
 int sum(int , int);
